@@ -1,4 +1,8 @@
 
+
+
+
+"""
 #assign the operators
 
 #use a dictionary
@@ -59,3 +63,5 @@ for line in program:
           
 
     dataFlag=False
+
+"""

@@ -5,7 +5,7 @@
 
 
 #leer archivo
-file = open("read.py")
+file = open("tryOuts.py")
 
 operators =  {"=" : "Asignación", '+': 'Suma', '/' : 'División', "^" : 'Potencia', '//' : 'Comentario', '*' : 'Multiplicación', '-' : 'Resta'}
 operators_key = operators.keys()

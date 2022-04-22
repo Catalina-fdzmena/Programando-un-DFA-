@@ -109,10 +109,6 @@ def lexerAritmetico(lineas):
 # exec("%s = %d" % (str,5000)) función para parametizar si es variable
 
 # Generar un if para asignar // como un comentario
-    print(caracteres)
-
-
-
 lexerAritmetico(lineas)
 
 

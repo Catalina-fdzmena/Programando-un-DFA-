@@ -1,5 +1,6 @@
 # import numpy as num
 
+file = open("ejemplo.txt")
 
 import operator
 

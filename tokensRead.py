@@ -15,18 +15,48 @@ ops = {
 lineas = file.readlines()
 caracteres = []
 
+
+
 def lexerAritmetico(lineas):
     for i in range(len(lineas)):
         caracteres.append(lineas[i].split())
-        print(caracteres)
 
-    #for i in caracteres:
-        #for j in range(len(i)):
+        for i in caracteres:
+            
+            #Asegurarse que lo primero que cheque si es comentario con una variable que revise si es verdadero o falso
+            Comment = False
+
+            for j in range(len(i)):
+
+                if Comment == True: 
+                
+                elif isInteger(j[i]):
+
+                elif isFloat(j[i]):
+
+                elif isOperator(j[i]):
+
+                elif isParenthesisInitial(j[i]):
+
+                elif isParenthesisFinal(j[i]):
+
+                elif isComment(j[i]):
+
+                elif isVariable(j[i]):
+
+
+                
             
 #apply exec() method
 # exec("%s = %d" % (str,5000)) función para parametizar si es variable
 
 # Generar un if para asignar // como un comentario
+    print(caracteres)
+
+
+
+lexerAritmetico(lineas)
+
 
 
 

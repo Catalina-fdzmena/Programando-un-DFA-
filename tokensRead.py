@@ -1,6 +1,4 @@
-# import numpy as num
-
-file = open("ejemplo.txt")
+file = open("ejemplo.txt", 'r')
 
 import operator
 
@@ -12,6 +10,15 @@ ops = {
     '%' : operator.mod,
     '^' : operator.xor,
 }
+
+lineas = file.readlines()
+
+caracteres = []
+
+for i in range(len(lineas)):
+    caracteres.append(lineas[i].split())
+
+print(caracteres)
 
 
 #apply exec() method

@@ -15,6 +15,43 @@ ops = {
 lineas = file.readlines()
 caracteres = []
 
+def isInteger(j[i]):
+isInteger(j[i])
+
+def isFloat(j[i]):
+isFloat(j[i])
+
+def isOperatorEqual(j[i]):
+isOperatorEqual(j[i])
+
+def isOperatorAdd(j[i]):
+isOperatorAdd(j[i])
+
+def isOperatorSub(j[i]):
+isOperatorSub(j[i])
+
+def isOperatorMult(j[i]):
+isOperatorMult(j[i])
+
+def isOperatorDiv(j[i]):
+isOperatorDiv(j[i])
+
+def isOperatorPow(j[i]):
+isOperatorPow(j[i])
+
+def isParenthesisInitial(j[i]):
+isParenthesisInitial(j[i])
+
+def isParenthesisFinal(j[i]):
+isParenthesisFinal(j[i])
+
+def isComment(j[i]):
+isComment(j[i])
+
+def isVariable(j[i]):
+
+isVariable(j[i])
+
 
 
 def lexerAritmetico(lineas):
@@ -29,12 +66,22 @@ def lexerAritmetico(lineas):
             for j in range(len(i)):
 
                 if Comment == True: 
-                
+                    
                 elif isInteger(j[i]):
 
                 elif isFloat(j[i]):
 
-                elif isOperator(j[i]):
+                elif isOperatorEqual(j[i]):
+
+                elif isOperatorAdd(j[i]):
+
+                elif isOperatorSub(j[i]):
+
+                elif isOperatorMult(j[i]):
+
+                elif isOperatorDiv(j[i]):
+
+                elif isOperatorPow(j[i]):
 
                 elif isParenthesisInitial(j[i]):
 
@@ -42,7 +89,7 @@ def lexerAritmetico(lineas):
 
                 elif isComment(j[i]):
 
-                elif isVariable(j[i]):
+                def isVariable(j[i]):
 
 
                 

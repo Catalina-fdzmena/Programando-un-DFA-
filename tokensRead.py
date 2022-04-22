@@ -1,3 +1,83 @@
+# import numpy as num
+
+
+import operator
+
+ops = {
+    '+' : operator.add,
+    '-' : operator.sub,
+    '*' : operator.mul,
+    '/' : operator.truediv,  # use operator.div for Python 2
+    '%' : operator.mod,
+    '^' : operator.xor,
+}
+
+
+#apply exec() method
+# exec("%s = %d" % (str,5000)) función para parametizar si es variable
+
+# Generar un if 
+
+sting = 'jsdfkjsdkfj'
+
+print(sting[1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

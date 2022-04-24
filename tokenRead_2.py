@@ -19,9 +19,38 @@ def isInt(num):
     except ValueError:
         return False
 
-def isOperator(char):
+"""def isOperator(char):
     operadores = ['+', '-', '*', '/', '%', '^']
-    return (char in operadores)
+    return (char in operadores)"""
+
+def isSuma(char):
+    suma = ['+']
+    return(char in suma)
+
+def isResta(char):
+    resta = ['-']
+    return(char in resta)
+
+def isMultiplicacion(char):
+    multi = ['*']
+    return(char in multi)
+
+def isDivision(char):
+    div = ['/']
+    return(char in div)
+
+def isPow(char):
+    pow = ['^']
+    return(char in pow)
+
+
+def isPorcentaje(char):
+    porcentaje = ['%']
+    return(char in porcentaje)
+
+def isAsignacion(char):
+    asignacion = ['=']
+    return(char in asignacion)
 
 def isFloat(num):
     try:
@@ -36,10 +65,6 @@ def isVar(char):
         return False
     except ValueError:
         return True
-
-def isAsignacion(char):
-    asignacion = ['=']
-    return(char in asignacion)
 
 def isRightParentesis(char):
     parentesis = ['(']
@@ -61,19 +86,31 @@ def lexerAritmetico(lista):
                 print(lista[i])
             break
         elif isRightParentesis(char):
-            print(('Right Parenthesis: ('))
+            print(('Parentesis de abre: ('))
         elif isLeftParentesis(char):
-            print(('Left Parenthesis: )'))
+            print(('Parentesis de cierra: )'))
+        elif isSuma(char):
+            print(('Suma: +'))
+        elif isResta(char):
+            print(('Operador Resta: -'))
+        elif isMultiplicacion(char):
+            print(('Operador Multiplicacion: *'))            
+        elif isDivision(char):
+            print(('Operador Division: /'))
+        elif isPow(char):
+            print(('Operador Potencia: /'))
         elif isAsignacion(char):
-            print(('Asignation: ='))
-        elif isOperator(char):
-            print('Operator : ' + char)
+            print(('Asignacion: ='))
+        elif isPorcentaje(char):
+            print(('Operador Porcentaje: %'))
+        #elif isOperator(char):
+            #print('Operator : ' + char)
         elif isVar(char):
             print('Variable : ' + char)
         elif isFloat(char):
             print('Float : ' + char)
         elif isInt(char):
-            print('Integer : ' + char)
+            print('Entero : ' + char)
 
 lineas = file.readlines()
 

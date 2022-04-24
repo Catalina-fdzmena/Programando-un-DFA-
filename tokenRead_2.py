@@ -20,7 +20,7 @@ def isInt(num):
         return False
 
 def isOperator(char):
-    operadores = ['+', '-', '*', '/', '%', '^', '=']
+    operadores = ['+', '-', '*', '/', '%', '^']
     return (char in operadores)
 
 def isFloat(num):
@@ -37,6 +37,10 @@ def isVar(char):
     except ValueError:
         return True
 
+def isAsignacion(char):
+    asignacion = ['=']
+    return(char in asignacion)
+
 def isRightParentesis(char):
     parentesis = ['(']
     return(char in parentesis)
@@ -48,7 +52,7 @@ def isLeftParentesis(char):
 def isComentario(char):
     return (char == '//')
 
-def checarCaracteres(lista):
+def lexerAritmetico(lista):
     for char in lista:
         if isComentario(char):
             index = lista.index(char)
@@ -60,6 +64,8 @@ def checarCaracteres(lista):
             print(('Right Parenthesis: ('))
         elif isLeftParentesis(char):
             print(('Left Parenthesis: )'))
+        elif isAsignacion(char):
+            print(('Asignation: ='))
         elif isOperator(char):
             print('Operator : ' + char)
         elif isVar(char):
@@ -79,4 +85,4 @@ for i in range(len(lineas)):
 print(caracteres)
 
 for i in caracteres:
-    checarCaracteres(i)
+    lexerAritmetico(i)

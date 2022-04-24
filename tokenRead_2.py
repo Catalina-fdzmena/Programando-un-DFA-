@@ -43,7 +43,6 @@ def isPow(char):
     pow = ['^']
     return(char in pow)
 
-
 def isPorcentaje(char):
     porcentaje = ['%']
     return(char in porcentaje)
@@ -77,13 +76,13 @@ def isLeftParentesis(char):
 def isComentario(char):
     return (char == '//')
 
-def lexerAritmetico(lista):
-    for char in lista:
+def lexerAritmetico(tokenList):
+    for char in tokenList:
         if isComentario(char):
-            index = lista.index(char)
+            index = tokenList.index(char)
             print('Comentario : //')
-            for i in range(index+1, len(lista)):
-                print(lista[i])
+            for i in range(index+1, len(tokenList)):
+                print(tokenList[i])
             break
         elif isRightParentesis(char):
             print(('Parentesis de abre: ('))

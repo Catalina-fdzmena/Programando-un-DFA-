@@ -8,7 +8,16 @@ Andrea Catalina Fernández Mena      A01197705
 Thomas Freund Paternostro           A00831997
 
 """
+#Cosas faltantes:
 
+#Regla 1 de variables de formación de algunos tokens
+"""
+Variables:
+
+    Deben empezar con una letra (mayúscula o minúscula).
+    Sólo están formadas por letras, números y underscore (‘_’).
+
+"""
 
 file = open("ejemplo.txt", 'r')
 
